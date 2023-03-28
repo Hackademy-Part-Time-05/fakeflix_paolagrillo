@@ -32,7 +32,7 @@
                     Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o riattivare il tuo abbonamento.
                 </p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                    <button type="button" class="btn btn-danger btn-lg px-4 me-sm-3">Guarda i Film</button>
+                    <button type="button" class="btn btn-danger btn-lg px-4 me-sm-3" >Guarda i Film</button>
                     {{-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Esercizio</button> --}}
                 </div>
             </div>

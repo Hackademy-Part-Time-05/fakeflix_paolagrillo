@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CatalogueController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[CatalogueController::class ,'index'])->name('welcome');
 
-Route::get('/catalogo', function () {
-    return view('catalogue');
-});
+Route::get('/catalogoFilms',[CatalogueController::class,'catalogueFilm'])->name('catalogueFilms');
+Route::get('/catalogo/dettagli/{id}',[CatalogueController::class,'show'])->name('show');
+Route::get('/catalogoSerie',[CatalogueController::class,'catalogueSeries'])->name('catalogueSeries');

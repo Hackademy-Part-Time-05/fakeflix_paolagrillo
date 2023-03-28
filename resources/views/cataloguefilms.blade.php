@@ -25,12 +25,13 @@
 
         <section class="main-container ">
             <div class="location" id="home">
-                <h1 id="home">Film su FakeFlix</h1>
+                <h1 id="home">Films su FakeFlix</h1>
                 <div class="box">
-                    <a href="">
-                        <img src="{{$list['cover']}}" alt="lista Film e Serie TV">
-                        <h2>{{$list['title']}}</h2>
+                    @foreach ($films as $film)
+                    <a href="{{route('show',['id'=>$film['films']])}}">
+                        <img src="{{$film['cover']}}" alt="">
                     </a>
+                    @endforeach
 
                 </div>
             </div>
