@@ -19,7 +19,7 @@
                 </a>
             </div>
             <nav class="main-nav">
-                <a href="#">Home</a>
+                <a href="#">Homes</a>
                 <a href="#">Film</a>
                 {{-- <a href="#">Serie TV</a> --}}
             </nav>
